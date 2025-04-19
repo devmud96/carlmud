@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMud</title>
+    <link rel="stylesheet" href="reset.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+   
+</head>
+<body id="homeSection">
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-scroll shadow-0" style="background-color: #CEE7E6; opacity: 0;" id="navbar" data-bs-animate="fadeIn">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/DevMudBlueLogo.png" alt="DevMud Logo" class="img-fluid" style="max-height: 25px;">
+        </a>
+        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+            aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span   class="d-flex justify-content-start align-items-center">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link px-3" href="#homeSection">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#myProjects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+                        Contact Me <i class="fas fa-phone-alt"></i>
+                    </a>
+                </li>                    
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner Section -->
+<section class="banner-section" style="position: relative; height: 500px; background: url(images/queenstown.avif) no-repeat center center; background-size: cover; filter: brightness(1.2) contrast(1.3); animation: fadeInBackground 3s ease-in-out forwards;">
+    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);"></div> <!-- Adjusted opacity of overlay -->
+    <div class="container text-center text-white position-relative z-index-2" style="padding-top: 100px;">
+        <h1 class="display-3 gradient-text" style="font-weight: bold; animation: fadeIn 2s ease-in-out;">Carl Mudlong | Web Developer</h1>
+        <p class="lead" style="font-size: 1.5rem;">Design. Develop. Deliver.</p>
+    </div>
+</section>
+
+            
+
+         <!-- About section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">About Me</h2>
+                <p class="lead">
+                    Hi, I’m <strong>Carl Mudlong</strong>, a freelance web developer who specializes in creating 
+                    <span class="text-primary">fast, accessible, and user-friendly websites.</span> 
+                </p>
+                <p class="mt-3">
+                    With a focus on delivering <strong>custom web solutions</strong>, I help small businesses and entrepreneurs 
+                    build websites that not only look great but perform seamlessly. I believe every project should be 
+                    <span class="text-success">efficient, scalable, and tailored to meet the unique needs</span> of my clients.
+                </p>
+                <p class="mt-4 font-weight-bold">
+                    Let’s work together to create something amazing.
+                </p>
+                <div class="btn-group">
+                    <!-- Blue Button for "Reach out today!" -->
+                    <a href="#!" class="btn btn-blue" data-bs-toggle="modal" data-bs-target="#contactModal">
+                      Reach out today!
+                    </a>
+                    
+                    <!-- Light Gray Button for "My CV" -->
+                    <a href="images/CV Carlisle Mudlong.pdf" target="_blank" class="btn btn-lightgray">
+                      My CV
+                    </a>
+                    
+                    <!-- Red Button for "Browse my Projects" -->
+                    <a href="#myProjects" class="btn btn-red">
+                      Browse my Projects
+                    </a>
+                  </div>         
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5 mb-2">
+        <h2 class="mb-4">Proficiencies</h2>
+        <div class="row justify-content-center">
+            <!-- Power BI -->
+            <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                <img src="images/powerbi_icon.png" alt="Power BI" width="80" height="50">
+                <p class="mt-2">Power BI</p>
+            </div>
+            <!-- JavaScript -->
+            <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                <i class="fab fa-js fa-3x text-warning"></i>
+                <p class="mt-2">JavaScript</p>
+            </div>
+        
+            <!-- Node.js -->
+            <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                <i class="fab fa-node fa-3x text-success"></i>
+                <p class="mt-2">Node.js</p>
+            </div>
+            <!-- Excel (Using an SVG) -->
+            <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                <img src="images/excel_logo.svg" alt="Excel" width="80" height="50">
+                <p class="mt-2">Excel</p>
+            </div>
+            <!-- PHP -->
+            <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                <i class="fab fa-php fa-3x text-primary"></i>
+                <p class="mt-2">PHP</p>
+            </div>
+                <!-- Python -->
+                <div class="col-md-2 col-sm-6 col-4 proficiency-item">
+                    <i class="fab fa-python fa-3x text-primary"></i>
+                    <p class="mt-2">Python</p>
+                </div>
+        </div>
+    </div>
+
+
+</section>
+
+        
+
+
+
+        <main>
+    
+
+            
+            
+<!-- Projects section -->
+<div class="container mt-2 me-0 ms-0 mb-3">
+    <h2 id="myProjects" class="text-center" style="margin-bottom: 15px;">My Projects</h2> 
+    <div class="row g-4"> 
+        <!-- Project 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card position-relative" style="height: 210px; width: 100%; overflow: hidden;">
+                <a href="projects/Acelen/index.html" target="_blank">
+                    <img src="images/acelen_icon.jpg" class="card-img" alt="Project 1" style="object-fit: cover; height: 100%; width: 100%;">
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0); transition: background 0.3s ease;">
+                        <h3 class="text-uppercase text-white font-weight-bold opacity-0" style="transition: opacity 0.3s ease;">Acelen</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card position-relative" style="height: 210px; width: 100%; overflow: hidden;">
+                <a href="projects/localsrusWebsiteCarlisleMudlong/index.html" target="_blank">
+                    <img src="images/localsrus_icon.jpg" class="card-img" alt="Project 2" style="object-fit: cover; height: 100%; width: 100%;">
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0); transition: background 0.3s ease;">
+                        <h3 class="text-uppercase text-white font-weight-bold opacity-0" style="transition: opacity 0.3s ease;">LocalsRUs</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card position-relative" style="height: 210px; width: 100%; overflow: hidden;">
+                <a href="projects/b2b/index.html" target="_blank">
+                    <img src="images/B2B_icon.jpg" class="card-img" alt="Project 3" style="object-fit: cover; height: 100%; width: 100%;">
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0); transition: background 0.3s ease;">
+                        <h3 class="text-uppercase text-white font-weight-bold opacity-0" style="transition: opacity 0.3s ease;">B2B</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card position-relative" style="height: 210px; width: 100%; overflow: hidden;">
+                <a href="projects/acbWebsiteCarlisleMudlong/index.html" target="_blank">
+                    <img src="images/ACB_icon.jpg" class="card-img" alt="Project 4" style="object-fit: cover; height: 100%; width: 100%;">
+                    <div class="card-img-overlay d-flex justify-content-center align-items-center" style="background: rgba(0, 0, 0, 0); transition: background 0.3s ease;">
+                        <h3 class="text-uppercase text-white font-weight-bold opacity-0" style="transition: opacity 0.3s ease;">ACB</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            
+        
+            <!-- website features section -->
+            <div class="container mt-5 me-0 ms-0 px-0"> 
+                <h2 class="text-center mb-4" style="margin-bottom: 15px;">Website Features</h2> 
+                <div class="row g-3"> 
+                    <!-- Column 1 -->
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-universal-access fa-2x me-2"></i>
+                            <h3>WCAG Compliant</h3>
+                        </div>
+                        <p>I design websites that follow WCAG standards, ensuring accessibility for users with visual, auditory, cognitive, and motor impairments. This creates an inclusive experience and meets legal requirements.</p>
+                    </div>
+            
+                    <!-- Column 2 -->
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-tachometer-alt fa-2x me-2"></i>
+                            <h3>Fast Load Times</h3>
+                        </div>
+                        <p>I optimize website speed by reducing file sizes, enabling caching, and minimizing HTTP requests, ensuring fast loading on all devices for better engagement and user satisfaction.</p>
+                    </div>
+            
+                    <!-- Column 3 -->
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fa-mobile-alt fa-2x me-2"></i>
+                            <h3>Responsive Design</h3>
+                        </div>
+                        <p>I design responsive websites that adapt to all screen sizes using flexible grids and media queries, ensuring a seamless experience on any device.</p>
+                    </div>
+            
+                    <!-- Column 4 -->
+                    <div class="col-md-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="fas fas fa-compass fa-2x me-2"></i>
+                            <h3>Easy Navigation</h3>
+                        </div>
+                        <p>I design intuitive navigation with clear labels and logical hierarchies, ensuring users can easily find what they need, enhancing engagement and conversions.</p>
+                    </div>
+                </div>
+            </div>
+
+           
+
+
+            
+            <div class="container text-center mt-5">
+                <h2>Got Questions? Click Below.</h2>
+                <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">
+                    <i class="fas fa-envelope"></i> CONTACT FORM
+                </button>
+            </div>
+            
+            <!-- Contact Form Modal (using formspree) -->
+            <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="contactModalLabel">Ask Me Anything</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formspree.io/f/xpwpjybj" method="POST">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            
+        
+        </main>
+        
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-4 mt-5 align-items-center">
+        <div class="container footer-container d-flex justify-content-center"> 
+            <div class="row w-100"> 
+                <!-- Column 1: About Me -->
+                <div class="col-12 col-md-3">
+                    <h5>About DevMud</h5>
+                    <p>DevMud is a portfolio showcasing my development work, including websites and applications designed to improve user experience and accessibility.</p>
+                </div>
+    
+                <!-- Column 2: Quick Links -->
+                <div class="col-12 col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#homeSection" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="#myProjects" class="text-white text-decoration-none">Projects</a></li>
+                        <li><a href="#!" class="text-white text-decoration-none" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 3: Files -->
+                <div class="col-12 col-md-3">
+                    <h5>Files</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="images/CV Carlisle Mudlong.pdf" target="_blank" class="text-white text-decoration-none">Resume (PDF)</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 4: Social Media Icons -->
+                <div class="col-12 col-md-3">
+                    <h5>My Socials</h5>
+                    <div>
+                        <a href="https://linkedin.com" target="_blank" class="text-white me-3">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://www.instagram.com/parlisle/" target="_blank" class="text-white me-3">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="text-center mt-4">
+            <p>&copy; 2025 Carl Mudlong. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+   
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

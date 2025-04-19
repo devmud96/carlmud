@@ -1,0 +1,456 @@
+/* Link Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    /* font-size: 16px; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Content font */
+    line-height: 1.6;
+    color: #333; /* Dark gray text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif; /* Header font */
+    font-weight: 600;
+    color: #222; /* Darker color for headers */
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Content Styling */
+p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Optional: Links Styling */
+a {
+    color: #0097b2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+    color: #213444;
+    font-weight: bolder;
+}
+
+.navbar-scroll .nav-link:hover,
+.navbar-scroll .fa-bars:hover {
+    color: #0097b2;
+    font-weight: bolder;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+    color: #7f4722;
+}
+
+.navbar .container {
+    width: 60% !important; /* Force width to 50% */
+    max-width: 100%; /* Ensure it doesn't get limited */
+    margin: 0 auto; /* Center the container */
+}
+
+section {
+    width: 100%;
+    display: flex;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto; /* Centers the main element horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Footer Styling */
+footer h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0097b2;
+}
+
+footer {
+    width: 100%; /* Ensure the footer takes up the full width */
+    padding: 0; /* Adjust padding if necessary */
+}
+
+.footer-container {
+    width: 60%; /* Full width for the container */
+    max-width: 100%; /* Ensures no constraining of container width */
+}
+
+.row {
+    width: 100%; /* Ensures row takes up full width */
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+/* Banner Section Styling */
+.banner-section {
+    background-color: #0097b2; /* Background color */
+    color: white; /* Text color */
+    padding: 4rem 0; /* Space around the content */
+    text-align: center; /* Centers the text inside */
+}
+
+.banner-section h1 {
+    font-size: 2.5rem; /* Larger font for the slogan */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+.banner-section p {
+    font-size: 1.2rem; /* Slightly larger text for the paragraph */
+    margin-top: 0; /* Remove extra margin from top */
+}
+
+/* Optionally, add responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .banner-section h1 {
+        font-size: 2rem; /* Adjust the heading font size for smaller screens */
+    }
+
+    .banner-section p {
+        font-size: 1rem; /* Adjust the paragraph font size */
+    }
+}
+
+
+
+
+@media (max-width: 1440px) {
+    main {
+        width: 90%;
+        align-items: center;
+    }
+
+    .navbar .container {
+        width: 95% !important;
+    }
+
+    .footer-container{
+        width: 100% !important;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+/* Container for the buttons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Base styling for each button */
+  .btn-group .btn {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    background-color: #3498db; /* Default blue background */
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-group .btn:hover {
+    transform: translateY(-3px); /* Hover effect to lift the button */
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Blue button for "Reach out today!" */
+  .btn-blue {
+    background-color: #3498db; /* Blue */
+  }
+  
+  .btn-blue:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Light gray button for "My CV" */
+  .btn-lightgray {
+    background-color: #95a5a6; /* Light gray */
+  }
+  
+  .btn-lightgray:hover {
+    background-color: #7f8c8d; /* Darker gray on hover */
+  }
+  
+  /* Red button for "Browse my Projects" */
+  .btn-red {
+    background-color: #e74c3c; /* Red */
+  }
+  
+  .btn-red:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .btn-group {
+      justify-content: center;
+    }
+  
+    .btn-group .btn {
+      width: 150px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-group {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn-group .btn {
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+  }
+  
+
+  /* Projects Style */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 250px; /* Reduced height of the cards */
+    overflow: hidden; /* Prevent the image from overflowing */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.card-img-overlay h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .card-img-overlay {
+    background: rgba(0, 0, 0, 0.7); /* Darken overlay on hover */
+}
+
+.card:hover .card-img-overlay h3 {
+    opacity: 1; /* Show text on hover */
+}
+
+
+
+
+
+/* proficiency animations */
+.proficiency-item {
+    opacity: 0; /* Start with elements invisible */
+    transform: translateX(-30px); /* Start off-screen to the left */
+    animation: popIn 0.6s forwards; /* Animation for pop-in effect */
+}
+
+/* Add delays to make the items appear sequentially */
+.proficiency-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.proficiency-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.proficiency-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.proficiency-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.proficiency-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.proficiency-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Keyframe for pop-in animation */
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Off-screen at the start */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+
+
+
+/* about section animations */
+    /* Text Animation: Left to Right */
+    .text-center p, .text-center h2 {
+        opacity: 0;
+        transform: translateX(-30px);
+        animation: textSlideIn 0.6s forwards;
+    }
+
+    /* Sequential delays for text elements */
+    .text-center h2 {
+        animation-delay: 0.1s;
+    }
+
+    .text-center p:nth-of-type(1) {
+        animation-delay: 0.2s;
+    }
+
+    .text-center p:nth-of-type(2) {
+        animation-delay: 0.3s;
+    }
+
+    .text-center p:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }
+
+    /* Button Animation: Right to Left */
+    .btn-group a {
+        opacity: 0;
+        transform: translateX(30px);
+        animation: buttonSlideIn 0.6s forwards;
+    }
+
+    /* Sequential delays for buttons */
+    .btn-group a:nth-of-type(1) {
+        animation-delay: 0.5s;
+    }
+
+    .btn-group a:nth-of-type(2) {
+        animation-delay: 0.6s;
+    }
+
+    .btn-group a:nth-of-type(3) {
+        animation-delay: 0.7s;
+    }
+
+    /* Keyframe for Text Animation (Left to Right) */
+    @keyframes textSlideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* Keyframe for Button Animation (Right to Left) */
+    @keyframes buttonSlideIn {
+        0% {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+/* navbar animation */
+    #navbar {
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acelen Optometrists</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+
+</head>
+
+
+<body>
+    <!-- nav -->
+    <nav id="navbar">
+        <div class="nav-content-wrapper">
+            <img class="nav-logo" src="./gallery/nav-images/acelen-logo-nav.png" alt="nav logo acelen">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown-toggle"><a href="#">Products▽</a>
+                    <div class="dropdown-content">
+                        <a href="glasses.html">Glasses</a>
+                        <a href="sunglasses.html">Sun Glasses</a>
+                        <a href="lenses.html">Lenses</a>
+                    </div>
+                </li>
+                <li class="dropdown-toggle"><a href="#">Eye Health▽</a>
+                    <div class="dropdown-content">
+                        <a href="book.html">Book Eye Test</a>
+                        <a href="condition.html">Eye Conditions</a>
+                        <a href="tech.html">Eye Technology</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    <section id="top-content">
+        <div class="content-wrapper">
+            <div class="booking-container">
+
+                <div class="booking-left">
+                    <h2>Book An Eye Test</h2>
+                    <form id="BookingForm">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="clinic">Select Clinic</label>
+                        <select id="clinic" name="clinic" required>
+                            <option value="">--Please choose an option--</option>
+                            <option value="clinic1">Mawson Lakes</option>
+                            <option value="clinic2">Parafield Gardens</option>
+                        </select>
+
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" name="date" required>
+
+                        <label for="time">Preferred Time</label>
+                        <input type="time" id="time" name="time" required>
+
+                        <button class="styled-button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="booking-right">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-content-wrapper">
+            <div class="footer-top">
+                <img src="./gallery/nav-images/acelen-logo-nav.png" alt="acelen footer logo">
+                <div class="footer-top-social-icons">
+                    <a href="https://example.com/" class="facebook">
+                        <img src="./gallery/footer_images/icon-fb.png" alt="facebook icon">
+                    </a>
+                    <a href="https://example.com/" class="instagram">
+                        <img src="./gallery/footer_images/icon-instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://example.com/" class="youtube">
+                        <img src="./gallery/footer_images/icon-youtube.png" alt="youtube icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-bottom-container">
+                    <h3>Services</h3>
+                    <a href="book.html">Book Eye Test</a>
+                    <a href="condition.html">Eye Conditions</a>
+                    <a href="tech.html">Eye Tech</a>
+                    <a href="glasses.html">Glasses</a>
+                    <a href="sunglasses.html">Sunglasses</a>
+                    <a href="lenses.html">Lenses</a>
+                </div>
+                <div class="footer-bottom-container">
+                    <h3>Example Links</h3>
+                    <a href="https://example.com/">www.megacorp.com</a>
+                    <a href="https://example.com/">www.examinamina.com</a>
+                    <a href="https://example.com/">www.australiavision.com</a>
+                    <a href="https://example.com/">www.meseeksmeseek.com</a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </footer>
+    <div class="copyright">
+        <p>2024 Acelen Optometrists All Rights Reserved</p>
+        <div class="copyright-right">
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+        </div>
+    </div>
+
+    <script src="scripts/scripts.js">
+    </script>
+    <script src="scripts/book.js"></script>
+</body>
+
+</html>
